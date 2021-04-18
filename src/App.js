@@ -1,24 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Mycomponents/Header"
+import {Todos} from "./Mycomponents/Todos";
+import {Todo} from "./Mycomponents/Todo";
+import {Footer} from "./Mycomponents/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <div>Hello i am abhiedwar001! This is my first react app</div>
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      </header>
-    </div>
+    <>
+  <Header title="My Todos List"></Header>
+  <Todos></Todos>
+  <Todo/>
+  <Footer/>
+  </>
   );
 }
 
